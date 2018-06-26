@@ -42,7 +42,7 @@ public class PhotoAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         final MoreSelectItemHolder moreSelectItemHolder= (MoreSelectItemHolder) holder;
         moreSelectItemHolder.tagImageView.setVisibility(View.VISIBLE);
         if (t.getPath()==null||t.getPath().equals("")){
-            moreSelectItemHolder.iconImageView.setImageResource(defaluteImage);
+            moreSelectItemHolder.iconImageView.setImageResource(t.getAddImageView());
             moreSelectItemHolder.tagImageView.setVisibility(View.GONE);
         }else {
             RequestOptions options = new RequestOptions()
