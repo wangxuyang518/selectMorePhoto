@@ -1,11 +1,8 @@
 <resources>
 
-    
-
-    
     <declare-styleable name="PickMoreStyle">
       <attr name="numColumns" format="integer"/>
-      <attr name="itemDefaluteImage" format="integer"/>
+      <attr name="itemDefaluteImage" format="reference"/>
       <attr name="maxImages" format="integer"/>
     </declare-styleable>
 </resources>
