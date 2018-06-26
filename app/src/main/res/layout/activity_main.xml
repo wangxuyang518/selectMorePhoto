@@ -14,6 +14,7 @@
         android:id="@+id/pickImages"
         app:numColumns="4"
         app:maxImages="8"
+        app:itemDefaluteImage="@mipmap/add_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

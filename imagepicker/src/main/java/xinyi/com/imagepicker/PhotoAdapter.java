@@ -15,6 +15,8 @@ import com.lzy.imagepicker.ui.ImageGridActivity;
 
 import java.util.List;
 
+import xinyi.com.selectmore.R;
+
 public class PhotoAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public static final int IMAGE_PICKER=1000;
@@ -41,8 +43,8 @@ public class PhotoAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         final ImageModel t = dataSource.get(dataSource.size()-position-1);
         final MoreSelectItemHolder moreSelectItemHolder= (MoreSelectItemHolder) holder;
         moreSelectItemHolder.tagImageView.setVisibility(View.VISIBLE);
+        moreSelectItemHolder.iconImageView.setImageResource(defaluteImage);
         if (t.getPath()==null||t.getPath().equals("")){
-            moreSelectItemHolder.iconImageView.setImageResource(t.getAddImageView());
             moreSelectItemHolder.tagImageView.setVisibility(View.GONE);
         }else {
             RequestOptions options = new RequestOptions()

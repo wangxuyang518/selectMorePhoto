@@ -21,6 +21,8 @@ import com.bumptech.glide.request.RequestOptions;
 import java.util.ArrayList;
 import java.util.List;
 
+import xinyi.com.selectmore.R;
+
 import static xinyi.com.imagepicker.PhotoAdapter.IMAGE_CHECK;
 
 /**

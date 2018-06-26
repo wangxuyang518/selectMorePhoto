@@ -1,7 +1,7 @@
 package xinyi.com.imagepicker;
 
 import java.io.Serializable;
-
+import xinyi.com.selectmore.R;
 public class ImageModel implements Serializable{
 
    public String path="";

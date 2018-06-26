@@ -1,5 +1,4 @@
 package xinyi.com.imagepicker;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -20,12 +19,14 @@ import com.lzy.imagepicker.view.CropImageView;
 import java.util.ArrayList;
 import java.util.List;
 
+import xinyi.com.selectmore.R;
+
 public class PickImages extends LinearLayout {
 
     private View rootView;
-    private int numColumns;
-    private int maxImages;
-    private int defaluteImage;
+    private int numColumns;//recycleView 列数
+    private int maxImages;//最大选取的图片
+    private int defaluteImage;//加载错误.占位符图片
 
     private RecyclerView mRecycleView;
     private List<ImageModel> dataList = new ArrayList<>();
@@ -40,7 +41,7 @@ public class PickImages extends LinearLayout {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.PickMoreStyle, 0, 0);
         numColumns = a.getInt(R.styleable.PickMoreStyle_numColumns, 3);
         maxImages = a.getInt(R.styleable.PickMoreStyle_maxImages, 9);
-        defaluteImage = a.getInt(R.styleable.PickMoreStyle_itemDefaluteImage, R.mipmap.add_photo);
+        defaluteImage =a.getResourceId(R.styleable.PickMoreStyle_itemDefaluteImage,R.mipmap.ic_launcher);
         a.recycle();
         init(context);
     }
