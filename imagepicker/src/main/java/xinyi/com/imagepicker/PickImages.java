@@ -40,7 +40,7 @@ public class PickImages extends LinearLayout {
         TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.PickMoreStyle, 0, 0);
         numColumns = a.getInt(R.styleable.PickMoreStyle_numColumns, 3);
         maxImages = a.getInt(R.styleable.PickMoreStyle_maxImages, 9);
-        defaluteImage = a.getInt(R.styleable.PickMoreStyle_itemDefaluteImage, R.mipmap.ic_launcher);
+        defaluteImage = a.getInt(R.styleable.PickMoreStyle_itemDefaluteImage, R.mipmap.add_photo);
         a.recycle();
         init(context);
     }
